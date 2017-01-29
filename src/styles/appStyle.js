@@ -1,5 +1,5 @@
 const appStyle = {
-  maxWidth: '30rem',
+  maxWidth: '100rem',
   margin: '0 auto',
   padding: '0 2rem'
 }

@@ -10,12 +10,12 @@ function LibrariesPage ({ libraries }) {
   return (
     <div>
       <BirdHeading />
-      <h3>warbler pre-release</h3>
-      <h3>
-        started with
-        <a href='https://github.com/pre-bp/pre-bp'>pre-bp</a>
-        v0.4.3, tiny frontend boilerplate
-      </h3>
+      <h4>warbler pre-release</h4>
+      <p>
+        started
+        with <a href='https://github.com/pre-bp/pre-bp'>pre-bp</a> v0.4.3,
+        tiny frontend boilerplate
+      </p>
       <p>JavaScript depedencies in production:</p>
       <LibraryList libraries={ libraries } />
       <BackToMainLink />

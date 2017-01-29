@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Matan Noam Shavit">
+    <meta name="description" content="Warbler is a way to hear music">
+    <title>Warbler</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+    <link rel="stylesheet" href="milligram.min.css">
+    <style>
+      .icon {
+        font-size: 200%;
+        line-height: 50%;
+        vertical-align: -25%;
+      }
+
+      a {
+        color: #fff59d;
+      }
+      .title a {
+        color: #fdd835;
+      }
+
+      .titleLogo {
+        width: 20.0rem;
+      }
+
+      .button,
+      button,
+      input[type='button'],
+      input[type='reset'],
+      input[type='submit'] {
+        margin-left: 0.2rem;
+        margin-right: 0.2rem;
+      }
+
+      .button.teal:hover:not([disabled]),
+      .button.teal:focus:not([disabled]) {
+        background-color: ##E040FB;
+        border-color: #E040FB;
+      }
+      .teal:not(.button) {
+          color: #00bfa5;
+      }
+
+      .button.yellow:hover:not([disabled]),
+      .button.yellow:focus:not([disabled]) {
+        background-color: #fdd835;
+        border-color: #fdd835;
+      }
+      .button.button-outline.yellow:hover:not([disabled]),
+      .button.button-outline.yellow:focus:not([disabled]),
+      .button.button-outline.yellow.active {
+        color: #fdd835;
+        border-color: #fdd835;
+        background-color: transparent;
+      }
+      .yellow:not(.button) {
+          color: #fdd835;
+      }
+
+      .button.light-yellow:hover:not([disabled]),
+      .button.light-yellow:focus:not([disabled]) {
+        background-color: #fff59d;
+        border-color: #fff59d;
+      }
+      .button.button-outline.light-yellow:hover:not([disabled]),
+      .button.button-outline.light-yellow:focus:not([disabled]),
+      .button.button-outline.light-yellow.active {
+        color: #fff59d;
+        border-color: #fff59d;
+        background-color: transparent;
+      }
+      .light-yellow:not(.button) {
+          color: #fff59d;
+      }
+
+      /* fine tuned size for default audio controls */
+      audio {
+        width: 100%;
+        min-width: 6.5rem;
+      }
+      @media (min-width: 30.0rem) {
+        audio {
+          min-width: 10rem;
+        }
+      }
+      @media (min-width: 40.0rem){
+        audio {
+          min-width: 20rem;
+        }
+      }
+      @media (min-width: 45.0rem){
+        audio {
+          min-width: 30rem;
+        }
+      }
+
+      .wrapper {
+        margin-top: 3.0rem;
+      }
+
+    </style>
+  </head>
+  <body>
+    <main class="wrapper">
+
+      <div id="app"></div>
+
+    </main>
+    <script type="text/javascript" src="bundle.js"></script>
+  </body>
+</html>

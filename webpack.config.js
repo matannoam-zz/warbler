@@ -1,4 +1,4 @@
-var DashboardPlugin = require('webpack-dashboard/plugin');
+var DashboardPlugin = require('webpack-dashboard/plugin')
 
 module.exports = {
   entry: [

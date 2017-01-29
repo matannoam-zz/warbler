@@ -1,4 +1,4 @@
-import { h } from 'preact';
+import { h } from 'preact'
 import { Link } from 'pre-bp-router'
 
 function QueenButton({ to }) {

@@ -29,7 +29,7 @@ export default function MainPage () {
         <Link href='/libraries'>libraries (in production)</Link>
       </p>
       <p>
-        <a href="https://github.com/matannoam/warbler">
+        <a target="_blank" href="https://github.com/matannoam/warbler">
           see the code
         </a>
       </p>

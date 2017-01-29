@@ -1,13 +1,28 @@
-import { h } from 'preact';
+import { h } from 'preact'
 
 function Tracklist({ tracks = [] }) {
-  var scTrack = {
+  var scTrackData = {
     title: 'Tigre',
     artists: 'Jarina De Marco',
     duration: '3:06',
     actionsEnabled: true,
-    originalPage: "https://soundcloud.com/jarinademarcoofficial/tigre"
+    originalPage: "https://soundcloud.com/jarinademarcoofficial/tigre",
+    sc_track_id: '281029126',
+    streamUrl: 'https://api.soundcloud.com/tracks/281029126/stream?client_id=INSERT_CLIENT_ID'
   }
+
+  function play(e) {
+    document.getElementById('audio1').play()
+  }
+
+  function pause(e) {
+    document.getElementById('audio1').pause()
+  }
+
+  function restart(e) {
+    document.getElementById('audio1').currentTime = 0
+  }
+
   return (
     <table className="tracklist">
       <thead>
@@ -36,12 +51,12 @@ function Tracklist({ tracks = [] }) {
           })
         }
         <tr>
-          <td><a href={scTrack.originalPage} target="_blank">{scTrack.title}</a></td>
-          <td>{scTrack.artists}</td>
-          <td>{scTrack.duration}</td>
+          <td><a href={scTrackData.originalPage} target="_blank">{scTrackData.title}</a></td>
+          <td>{scTrackData.artists}</td>
+          <td>{scTrackData.duration}</td>
           <td>
-            <audio controls>
-            </audio>
+            <audio id='audio1'><source src={scTrackData.streamUrl} /></audio>
+            <a onClick={play}>Play</a> - <a onClick={pause}>Pause</a> - <a onClick={restart}>Restart</a>
           </td>
         </tr>
       </tbody>

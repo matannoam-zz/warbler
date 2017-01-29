@@ -7,8 +7,7 @@ function Tracklist({ tracks = [] }) {
     duration: '3:06',
     actionsEnabled: true,
     originalPage: "https://soundcloud.com/jarinademarcoofficial/tigre",
-    sc_track_id: '281029126',
-    streamUrl: 'https://api.soundcloud.com/tracks/281029126/stream?client_id=INSERT_CLIENT_ID'
+    sc_track_id: '281029126'
   }
 
   function play(e) {
@@ -55,7 +54,6 @@ function Tracklist({ tracks = [] }) {
           <td>{scTrackData.artists}</td>
           <td>{scTrackData.duration}</td>
           <td>
-            <audio id='audio1'><source src={scTrackData.streamUrl} /></audio>
             <a onClick={play}>Play</a> - <a onClick={pause}>Pause</a> - <a onClick={restart}>Restart</a>
           </td>
         </tr>
